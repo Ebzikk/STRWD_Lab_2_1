@@ -29,7 +29,7 @@ namespace lab1_1.Controllers
             TimeSpan difference = Convert.ToDateTime(list[0]) - DateTime.Now;
             float dayCount = 365;
             float year = difference.Days / dayCount;
-            string result = $"Event: {list[1]} \nYears: {year} \nDays: {difference.Days} Hours: {difference.Hours} Min: {difference.Minutes} Sec: {difference.Seconds} \nDateNow: {DateTime.Now} \nEvent Date: {Convert.ToDateTime(list[0])}";
+            string result = $"Подія: {list[1]} \nРоки: {year} \nДні: {difference.Days} Години: {difference.Hours} Хвилини: {difference.Minutes} Секунди: {difference.Seconds} \nСьогодні: {DateTime.Now} \nДата події: {Convert.ToDateTime(list[0])}";
             return Content(result);
         }
 
